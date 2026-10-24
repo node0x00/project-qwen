@@ -1,0 +1,31 @@
+# Raspberry Pi-specific pins, layered on top of requirements.txt's package
+# list. Use with: uv pip install -r requirements.txt -r requirements-pi.txt
+#
+# mediapipe: the plain (unpinned) requirements.txt entry resolves to the
+# latest release, which stopped publishing linux_aarch64 wheels after
+# 0.10.18 (0.10.35, current latest, only ships macOS arm64 / Linux x86_64 /
+# Windows arm64 - confirmed via PyPI's release file listing, not a Python
+# 3.13-specific gap, mediapipe just never shipped a cp313 aarch64 wheel for
+# any version). 0.10.18 is the newest version that still has an aarch64
+# Linux wheel, and its Tasks API (HandLandmarker etc., what
+# gesture_recognizer.py uses) is unchanged from newer versions - verified
+# working standalone before deploying the full project.
+#
+# Also requires Python 3.12, not the Trixie system default of 3.13 (no
+# cp313 aarch64 wheel exists for mediapipe at any version either) - install
+# via `uv python install 3.12` and create the venv with `uv venv --python
+# 3.12`, not the system python3.
+mediapipe==0.10.18
+
+# GPIO backend for gpiozero's PIRSensor - lgpio is the modern backend for
+# current Raspberry Pi OS kernels (RPi.GPIO doesn't work on newer kernels).
+# Not needed on the Mac (falls back to the keypress mock there), but
+# required here for the real PIR sensor to actually work.
+lgpio
+
+# Prompt 2: Pi <-> ESP32 UART link and INA226 battery monitor
+pyserial
+smbus2
+
+# Prompt 3: YOLO26n object detection on the Pi (NCNN runtime only - no PyTorch here)
+ncnn

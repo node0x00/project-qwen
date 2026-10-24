@@ -1,0 +1,25 @@
+# webrtcvad imports pkg_resources, which setuptools>=81 removed - pin below
+# that or `import webrtcvad` fails with ModuleNotFoundError: No module
+# named 'pkg_resources'. Needed on both macOS and Raspberry Pi OS.
+setuptools<81
+
+sounddevice
+soundfile
+numpy
+webrtcvad
+# Pinned: openwakeword>=0.5.0 requires tflite-runtime on Linux (even though
+# this project only uses the ONNX backend), and tflite-runtime has no
+# wheels for Python >=3.12, which blocks installing on the Raspberry Pi
+# entirely. 0.4.0 has a universal (py3-none-any) wheel, works fine on both
+# macOS and Linux, and bundles its feature models directly instead of
+# needing a separate download_models() call - see WakeWordListener in
+# assistant.py for the resulting (older) API this pin requires using.
+openwakeword==0.4.0
+faster-whisper
+ollama
+piper-tts
+opencv-contrib-python
+mediapipe
+gpiozero
+
+# Prompt 3 on the dev Mac only (PyTorch backend + NCNN export): ultralytics

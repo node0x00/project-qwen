@@ -1,0 +1,23 @@
+# secrets and personal data - never commit
+.env
+*.env
+pi/models/owner_face*.json
+pi/captures/
+pi/maps/
+pi/dock_ref*/
+pi/*.csv
+pi/sounds/*.wav
+
+# downloaded models (see pi/models/README.md) - only the custom wake word is in the repo
+pi/models/*
+!pi/models/README.md
+!pi/models/hey_qwen.onnx
+
+# build output
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pio/
+build/
+.DS_Store

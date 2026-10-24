@@ -1,0 +1,17 @@
+%YAML 1.2
+---
+image_width: 640
+image_height: 480
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 645., 0., 308.08746235655974, 0., 645., 239.37764065273078,
+       0., 0., 1. ]
+dist_coeffs: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -0.021926329720704022, -0.17440224150840622, 0., 0., 0. ]
+rms_px: 0.48066011131039144
+note: "fx/fy fixed at 645 from tape-measured AprilTag distances (50 cm, 100 cm), 2026-10-12"

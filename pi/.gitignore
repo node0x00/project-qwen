@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+captures/
+.env
+*.bak
+models/owner_face.json
+camera_calib_try*.yaml
+calib_views.npz
+dock_ref/
+maps/

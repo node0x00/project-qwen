@@ -1,0 +1,22 @@
+# Project Qwen - the whole robot in one program (voice/AI, vision, security, docking, battery).
+# User service (needs the user's PipeWire session for audio; linger is on, so it starts at boot).
+#   install: cp qwen.service ~/.config/systemd/user/ && systemctl --user daemon-reload
+#            systemctl --user enable --now qwen
+#   logs:    journalctl --user -u qwen -f
+[Unit]
+Description=Project Qwen robot (assistant.py)
+After=pipewire.service wireplumber.service
+Wants=pipewire.service wireplumber.service
+
+[Service]
+WorkingDirectory=%h/QwenVision-Voice
+ExecStart=%h/QwenVision-Voice/venv/bin/python -u assistant.py
+Environment=PYTHONUNBUFFERED=1
+# assistant.py shuts down cleanly on Ctrl+C (stops motors, hands back the camera)
+KillSignal=SIGINT
+TimeoutStopSec=40
+Restart=on-failure
+RestartSec=15
+
+[Install]
+WantedBy=default.target
