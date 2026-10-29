@@ -3,7 +3,8 @@
 An offline home-security and assistant robot, built on salvaged hoverboard motors. It talks, follows
 voice and hand-gesture commands, recognizes its owner, responds to intruders, and docks itself to recharge.
 
-**Full write-up, with the design, the math and everything that went wrong:** https://node0x00.github.io/qwen/
+**Full write-up, with the design, the math and everything that went wrong:** https://node0x00.github.io/qwen/  
+**Build video:** linked from the write-up.
 
 <p align="center"><img src="docs/hero-robot.jpg" alt="Qwen, a 3D-printed robot with a round camera head on a scissor lift, in front of its two docking AprilTags" width="420"></p>
 
@@ -41,6 +42,23 @@ The Pi decides; the ESP32 reacts. Safety reflexes live on the ESP32 so they work
 |---|---|
 | <img src="docs/perfboard-pi.jpg" alt="Raspberry Pi 4 with a hand-soldered perfboard hat" width="300"> | <img src="docs/perfboard-esp32.jpg" alt="ESP32 perfboard with the level shifter and hall-sensor divider resistors" width="300"> |
 | Pi perfboard hat | ESP32 board, level shifter and the 10 kΩ hall dividers |
+
+## Gallery
+
+| | | |
+|---|---|---|
+| <img src="docs/security-unknown-face.jpg" width="260" alt="Security mode: robot facing a person with its camera view inset"> | <img src="docs/docking-run.jpg" width="260" alt="Docking run with the robot's camera view inset"> | <img src="docs/gesture-debug.jpg" width="260" alt="Hand-gesture overlay"> |
+| Security mode tracking a person | Self-docking | Hand-gesture control |
+| <img src="docs/docking-live-view.jpg" width="260" alt="Robot camera view with both docking tags boxed"> | <img src="docs/remote-unlock.jpg" width="260" alt="Phone app for the smart-home door lock and lights"> | <img src="docs/logic-analyzer-capture.jpg" width="260" alt="Logic-analyzer capture of the hoverboard protocol"> |
+| What the robot sees while docking | Smart-home remote unlock | Reverse engineering the hoverboard |
+
+**Wiring schematic** (everything as built):
+
+<img src="docs/schematic.svg" alt="Full KiCad-style wiring schematic of the robot">
+
+**Odometry:** distance from wheel counts, turning from the difference between the wheels:
+
+<img src="docs/odometry.svg" alt="Odometry explainer: 60 counts per turn, 8.5 mm per count, turning angle from the wheel difference">
 
 ## Repository layout
 

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="odo" viewBox="0 0 1600 900" role="img" aria-labelledby="odo-t"><style>@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap");
+#odo text { font-family: "Archivo", Arial, sans-serif; fill: #dde4e8; }
+#odo .o-h1 { font-size: 44px; font-weight: 800; letter-spacing: -.8px; }
+#odo .o-acc { fill: #6cc3a0; } #odo .o-amb { fill: #e2b04e; } #odo .o-blu { fill: #8fb5e6; }
+#odo .o-meta { font: 500 15px "JetBrains Mono", monospace; fill: #7d8a94; }
+#odo .o-rule { stroke: #26313a; stroke-width: 1.5; }
+#odo .o-step { font: 800 26px "JetBrains Mono", monospace; fill: #0f1417; }
+#odo .o-h2 { font-size: 22px; font-weight: 700; }
+#odo .o-lab { font-size: 17px; font-weight: 600; }
+#odo .o-small { font-size: 14px; fill: #95a3ad; }
+#odo .o-k { font: 700 13px "Archivo", sans-serif; letter-spacing: 2px; fill: #7d8a94; }
+#odo .o-b { font-size: 18px; fill: #c9d2d7; }
+#odo .o-strong { font-weight: 800; font-size: 22px; }
+#odo .o-eq { font: 600 24px "JetBrains Mono", monospace; }
+#odo .o-eq2 { font: 500 18px "JetBrains Mono", monospace; fill: #c9d2d7; }
+#odo .o-big { font: 700 32px "JetBrains Mono", monospace; }
+#odo .o-foot { font-size: 14px; fill: #7d8a94; }
+#odo .tire { fill: #1b2226; stroke: #3b474e; stroke-width: 22; }
+#odo .rim { fill: #11171a; stroke: #2c363c; stroke-width: 2; }
+#odo .hub { fill: #182024; stroke: #3e7a63; stroke-width: 2; }
+#odo .tk { stroke: #5b6870; stroke-width: 2; }
+#odo .tk-on { stroke: #6cc3a0; stroke-width: 4; }
+#odo .rl { stroke: #5b6870; stroke-width: 2; }
+#odo .seg { fill: #6cc3a0; opacity: .35; }
+#odo .dim { stroke: #95a3ad; stroke-width: 1.5; }
+#odo .dim-d { stroke: #5b6870; stroke-width: 1.5; stroke-dasharray: 5 5; }
+#odo .lead { stroke: #6cc3a0; stroke-width: 1.5; fill: none; }
+#odo .card { fill: #141b1f; stroke: #26313a; stroke-width: 1.5; }
+#odo .card-acc { fill: #10211b; stroke: #2f5e4c; stroke-width: 1.5; }
+#odo .arc-l { fill: none; stroke: #7aa8de; stroke-width: 4; stroke-dasharray: 2 8; stroke-linecap: round; }
+#odo .arc-r { fill: none; stroke: #6cc3a0; stroke-width: 4; stroke-dasharray: 2 8; stroke-linecap: round; }
+#odo .rb { fill: #161d21; stroke: #3a4852; stroke-width: 2; opacity: .55; }
+#odo .rb-on { fill: #182024; stroke: #6cc3a0; stroke-width: 2.4; }
+#odo .wh { fill: #2a3338; stroke: #5b6870; stroke-width: 1.5; }
+#odo .fw { fill: #e2b04e; }
+#odo .ang { fill: none; stroke: #e2b04e; stroke-width: 2.5; }
+#odo .ctr { fill: #e2b04e; }</style><rect width="100%" height="100%" fill="#0f1417"/>
+      <title id="odo-t">Odometry: 60 counts per wheel turn, 162 mm wheel, 509 mm per turn, 8.5 mm per count; turning angle equals the difference between the wheel distances divided by the wheel spacing</title>
+      <text x="48" y="72" class="o-h1">Project Qwen <tspan class="o-acc">· Odometry</tspan></text>
+      <text x="1552" y="62" class="o-meta" text-anchor="end">counting wheel turns to know</text>
+      <text x="1552" y="80" class="o-meta" text-anchor="end">how far it moved and turned</text>
+      <line x1="48" y1="98" x2="1552" y2="98" class="o-rule"></line>
+
+      <circle cx="62" cy="139" r="18" fill="#6cc3a0"></circle><text x="62" y="148" class="o-step" text-anchor="middle">1</text>
+      <text x="92" y="148" class="o-h2">How far: one wheel turn = 60 counts</text>
+      <circle cx="250" cy="352" r="125" class="tire"></circle>
+      <circle cx="250" cy="352" r="112" class="rim"></circle>
+      <line class="tk-on" x1="250.0" y1="262.0" x2="250.0" y2="236.0"></line><line class="tk" x1="260.2" y1="254.5" x2="261.9" y2="238.6"></line><line class="tk" x1="270.4" y1="256.1" x2="273.7" y2="240.5"></line><line class="tk" x1="280.3" y1="258.8" x2="285.2" y2="243.6"></line><line class="tk" x1="289.9" y1="262.5" x2="296.4" y2="247.9"></line><line class="tk" x1="299.0" y1="267.1" x2="307.0" y2="253.3"></line><line class="tk" x1="307.6" y1="272.7" x2="317.0" y2="259.8"></line><line class="tk" x1="315.6" y1="279.2" x2="326.3" y2="267.3"></line><line class="tk" x1="322.8" y1="286.4" x2="334.7" y2="275.7"></line><line class="tk" x1="329.3" y1="294.4" x2="342.2" y2="285.0"></line><line class="tk" x1="334.9" y1="303.0" x2="348.7" y2="295.0"></line><line class="tk" x1="339.5" y1="312.1" x2="354.1" y2="305.6"></line><line class="tk" x1="343.2" y1="321.7" x2="358.4" y2="316.8"></line><line class="tk" x1="345.9" y1="331.6" x2="361.5" y2="328.3"></line><line class="tk" x1="347.5" y1="341.8" x2="363.4" y2="340.1"></line><line class="tk" x1="348.0" y1="352.0" x2="364.0" y2="352.0"></line><line class="tk" x1="347.5" y1="362.2" x2="363.4" y2="363.9"></line><line class="tk" x1="345.9" y1="372.4" x2="361.5" y2="375.7"></line><line class="tk" x1="343.2" y1="382.3" x2="358.4" y2="387.2"></line><line class="tk" x1="339.5" y1="391.9" x2="354.1" y2="398.4"></line><line class="tk" x1="334.9" y1="401.0" x2="348.7" y2="409.0"></line><line class="tk" x1="329.3" y1="409.6" x2="342.2" y2="419.0"></line><line class="tk" x1="322.8" y1="417.6" x2="334.7" y2="428.3"></line><line class="tk" x1="315.6" y1="424.8" x2="326.3" y2="436.7"></line><line class="tk" x1="307.6" y1="431.3" x2="317.0" y2="444.2"></line><line class="tk" x1="299.0" y1="436.9" x2="307.0" y2="450.7"></line><line class="tk" x1="289.9" y1="441.5" x2="296.4" y2="456.1"></line><line class="tk" x1="280.3" y1="445.2" x2="285.2" y2="460.4"></line><line class="tk" x1="270.4" y1="447.9" x2="273.7" y2="463.5"></line><line class="tk" x1="260.2" y1="449.5" x2="261.9" y2="465.4"></line><line class="tk" x1="250.0" y1="450.0" x2="250.0" y2="466.0"></line><line class="tk" x1="239.8" y1="449.5" x2="238.1" y2="465.4"></line><line class="tk" x1="229.6" y1="447.9" x2="226.3" y2="463.5"></line><line class="tk" x1="219.7" y1="445.2" x2="214.8" y2="460.4"></line><line class="tk" x1="210.1" y1="441.5" x2="203.6" y2="456.1"></line><line class="tk" x1="201.0" y1="436.9" x2="193.0" y2="450.7"></line><line class="tk" x1="192.4" y1="431.3" x2="183.0" y2="444.2"></line><line class="tk" x1="184.4" y1="424.8" x2="173.7" y2="436.7"></line><line class="tk" x1="177.2" y1="417.6" x2="165.3" y2="428.3"></line><line class="tk" x1="170.7" y1="409.6" x2="157.8" y2="419.0"></line><line class="tk" x1="165.1" y1="401.0" x2="151.3" y2="409.0"></line><line class="tk" x1="160.5" y1="391.9" x2="145.9" y2="398.4"></line><line class="tk" x1="156.8" y1="382.3" x2="141.6" y2="387.2"></line><line class="tk" x1="154.1" y1="372.4" x2="138.5" y2="375.7"></line><line class="tk" x1="152.5" y1="362.2" x2="136.6" y2="363.9"></line><line class="tk" x1="152.0" y1="352.0" x2="136.0" y2="352.0"></line><line class="tk" x1="152.5" y1="341.8" x2="136.6" y2="340.1"></line><line class="tk" x1="154.1" y1="331.6" x2="138.5" y2="328.3"></line><line class="tk" x1="156.8" y1="321.7" x2="141.6" y2="316.8"></line><line class="tk" x1="160.5" y1="312.1" x2="145.9" y2="305.6"></line><line class="tk" x1="165.1" y1="303.0" x2="151.3" y2="295.0"></line><line class="tk" x1="170.7" y1="294.4" x2="157.8" y2="285.0"></line><line class="tk" x1="177.2" y1="286.4" x2="165.3" y2="275.7"></line><line class="tk" x1="184.4" y1="279.2" x2="173.7" y2="267.3"></line><line class="tk" x1="192.4" y1="272.7" x2="183.0" y2="259.8"></line><line class="tk" x1="201.0" y1="267.1" x2="193.0" y2="253.3"></line><line class="tk" x1="210.1" y1="262.5" x2="203.6" y2="247.9"></line><line class="tk" x1="219.7" y1="258.8" x2="214.8" y2="243.6"></line><line class="tk" x1="229.6" y1="256.1" x2="226.3" y2="240.5"></line><line class="tk" x1="239.8" y1="254.5" x2="238.1" y2="238.6"></line>
+      <circle cx="250" cy="352" r="34" class="hub"></circle>
+      <text x="250" y="353" class="o-small" text-anchor="middle">hall</text>
+      <text x="250" y="368" class="o-small" text-anchor="middle">sensors</text>
+      <path d="M253 224 L306 210" class="lead"></path>
+      <text x="312" y="215" class="o-lab o-acc">1 count = 6° of a turn</text>
+      <line x1="125" y1="500" x2="375" y2="500" class="dim"></line>
+      <line x1="125" y1="491" x2="125" y2="509" class="dim"></line><line x1="375" y1="491" x2="375" y2="509" class="dim"></line>
+      <text x="250" y="528" class="o-lab" text-anchor="middle">d = 162 mm</text>
+
+      <g transform="translate(486 214)">
+        <rect x="0" y="0" width="254" height="118" rx="12" class="card"></rect>
+        <text x="20" y="32" class="o-k">STEP</text>
+        <text x="20" y="62" class="o-b">Spin each wheel one full</text>
+        <text x="20" y="86" class="o-b">turn by hand and count</text>
+        <text x="20" y="110" class="o-b">the hall pulses: <tspan class="o-acc o-strong">60</tspan></text>
+      </g>
+      <g transform="translate(486 350)">
+        <rect x="0" y="0" width="254" height="118" rx="12" class="card"></rect>
+        <text x="20" y="32" class="o-k">ONE TURN ROLLS</text>
+        <text x="20" y="72" class="o-eq">C = π × d</text>
+        <text x="20" y="102" class="o-eq2">= π × 162 mm ≈ <tspan class="o-acc">509 mm</tspan></text>
+      </g>
+
+      <line class="rl" x1="110" y1="606" x2="740" y2="606"></line><line class="tk-on" x1="110.0" y1="594" x2="110.0" y2="606"></line><line class="tk-on" x1="120.5" y1="600" x2="120.5" y2="606"></line><line class="tk" x1="131.0" y1="600" x2="131.0" y2="606"></line><line class="tk" x1="141.5" y1="600" x2="141.5" y2="606"></line><line class="tk" x1="152.0" y1="600" x2="152.0" y2="606"></line><line class="tk" x1="162.5" y1="600" x2="162.5" y2="606"></line><line class="tk" x1="173.0" y1="600" x2="173.0" y2="606"></line><line class="tk" x1="183.5" y1="600" x2="183.5" y2="606"></line><line class="tk" x1="194.0" y1="600" x2="194.0" y2="606"></line><line class="tk" x1="204.5" y1="600" x2="204.5" y2="606"></line><line class="tk" x1="215.0" y1="594" x2="215.0" y2="606"></line><line class="tk" x1="225.5" y1="600" x2="225.5" y2="606"></line><line class="tk" x1="236.0" y1="600" x2="236.0" y2="606"></line><line class="tk" x1="246.5" y1="600" x2="246.5" y2="606"></line><line class="tk" x1="257.0" y1="600" x2="257.0" y2="606"></line><line class="tk" x1="267.5" y1="600" x2="267.5" y2="606"></line><line class="tk" x1="278.0" y1="600" x2="278.0" y2="606"></line><line class="tk" x1="288.5" y1="600" x2="288.5" y2="606"></line><line class="tk" x1="299.0" y1="600" x2="299.0" y2="606"></line><line class="tk" x1="309.5" y1="600" x2="309.5" y2="606"></line><line class="tk" x1="320.0" y1="594" x2="320.0" y2="606"></line><line class="tk" x1="330.5" y1="600" x2="330.5" y2="606"></line><line class="tk" x1="341.0" y1="600" x2="341.0" y2="606"></line><line class="tk" x1="351.5" y1="600" x2="351.5" y2="606"></line><line class="tk" x1="362.0" y1="600" x2="362.0" y2="606"></line><line class="tk" x1="372.5" y1="600" x2="372.5" y2="606"></line><line class="tk" x1="383.0" y1="600" x2="383.0" y2="606"></line><line class="tk" x1="393.5" y1="600" x2="393.5" y2="606"></line><line class="tk" x1="404.0" y1="600" x2="404.0" y2="606"></line><line class="tk" x1="414.5" y1="600" x2="414.5" y2="606"></line><line class="tk" x1="425.0" y1="594" x2="425.0" y2="606"></line><line class="tk" x1="435.5" y1="600" x2="435.5" y2="606"></line><line class="tk" x1="446.0" y1="600" x2="446.0" y2="606"></line><line class="tk" x1="456.5" y1="600" x2="456.5" y2="606"></line><line class="tk" x1="467.0" y1="600" x2="467.0" y2="606"></line><line class="tk" x1="477.5" y1="600" x2="477.5" y2="606"></line><line class="tk" x1="488.0" y1="600" x2="488.0" y2="606"></line><line class="tk" x1="498.5" y1="600" x2="498.5" y2="606"></line><line class="tk" x1="509.0" y1="600" x2="509.0" y2="606"></line><line class="tk" x1="519.5" y1="600" x2="519.5" y2="606"></line><line class="tk" x1="530.0" y1="594" x2="530.0" y2="606"></line><line class="tk" x1="540.5" y1="600" x2="540.5" y2="606"></line><line class="tk" x1="551.0" y1="600" x2="551.0" y2="606"></line><line class="tk" x1="561.5" y1="600" x2="561.5" y2="606"></line><line class="tk" x1="572.0" y1="600" x2="572.0" y2="606"></line><line class="tk" x1="582.5" y1="600" x2="582.5" y2="606"></line><line class="tk" x1="593.0" y1="600" x2="593.0" y2="606"></line><line class="tk" x1="603.5" y1="600" x2="603.5" y2="606"></line><line class="tk" x1="614.0" y1="600" x2="614.0" y2="606"></line><line class="tk" x1="624.5" y1="600" x2="624.5" y2="606"></line><line class="tk" x1="635.0" y1="594" x2="635.0" y2="606"></line><line class="tk" x1="645.5" y1="600" x2="645.5" y2="606"></line><line class="tk" x1="656.0" y1="600" x2="656.0" y2="606"></line><line class="tk" x1="666.5" y1="600" x2="666.5" y2="606"></line><line class="tk" x1="677.0" y1="600" x2="677.0" y2="606"></line><line class="tk" x1="687.5" y1="600" x2="687.5" y2="606"></line><line class="tk" x1="698.0" y1="600" x2="698.0" y2="606"></line><line class="tk" x1="708.5" y1="600" x2="708.5" y2="606"></line><line class="tk" x1="719.0" y1="600" x2="719.0" y2="606"></line><line class="tk" x1="729.5" y1="600" x2="729.5" y2="606"></line><line class="tk" x1="740.0" y1="594" x2="740.0" y2="606"></line>
+      <text x="110" y="630" class="o-small">0</text>
+      <text x="740" y="630" class="o-small" text-anchor="end">509 mm = one turn, unrolled</text>
+      <rect x="110" y="584" width="10.5" height="22" class="seg"></rect>
+      <path d="M120.5 582 L154 562" class="lead"></path>
+      <text x="160" y="566" class="o-lab o-acc">one count</text>
+
+      <g transform="translate(110 668)">
+        <rect x="0" y="0" width="630" height="112" rx="12" class="card-acc"></rect>
+        <text x="24" y="32" class="o-k">DISTANCE PER COUNT</text>
+        <text x="24" y="78" class="o-big">509 mm ÷ 60 ≈ <tspan class="o-acc">8.5 mm</tspan></text>
+        <text x="24" y="102" class="o-small">so distance = counts × 8.5 mm</text>
+      </g>
+
+      <line x1="790" y1="126" x2="790" y2="790" class="o-rule"></line>
+
+      <circle cx="844" cy="139" r="18" fill="#6cc3a0"></circle><text x="844" y="148" class="o-step" text-anchor="middle">2</text>
+      <text x="874" y="148" class="o-h2">How much it turned: the difference between the wheels</text>
+      <path d="M1035.0 545.0 A130 130 0 0 0 1011.5 470.4" class="arc-l"></path>
+      <path d="M1225.0 545.0 A320 320 0 0 0 1167.1 361.5" class="arc-r"></path>
+      <g transform="rotate(0 905 545)"><rect class="rb" x="1021.0" y="487" width="218" height="90" rx="16"></rect><rect class="wh" x="1022" y="517" width="26" height="56" rx="8"></rect><rect class="wh" x="1212" y="517" width="26" height="56" rx="8"></rect><path class="fw" d="M1130 491 l-8 26 h16 z"></path></g>
+      <g transform="rotate(-35 905 545)"><rect class="rb-on" x="1021.0" y="487" width="218" height="90" rx="16"></rect><rect class="wh" x="1022" y="517" width="26" height="56" rx="8"></rect><rect class="wh" x="1212" y="517" width="26" height="56" rx="8"></rect><path class="fw" d="M1130 491 l-8 26 h16 z"></path></g>
+      <circle cx="905" cy="545" r="5" class="ctr"></circle>
+      <line x1="905" y1="545" x2="1035.0" y2="545.0" class="dim-d"></line>
+      <line x1="905" y1="545" x2="1011.5" y2="470.4" class="dim-d"></line>
+      <path d="M961 545 A56 56 0 0 0 950.9 512.9" class="ang"></path>
+      <text x="969" y="533" class="o-lab o-amb">θ</text>
+      <text x="905" y="571" class="o-small" text-anchor="middle">turning centre</text>
+      <text x="971.0" y="501.9" class="o-lab o-blu">sₗ left</text>
+      <text x="1218.3" y="426.7" class="o-lab o-acc">sᵣ right</text>
+      <line x1="1035.0" y1="591" x2="1225.0" y2="591" class="dim"></line>
+      <line x1="1035.0" y1="583" x2="1035.0" y2="599" class="dim"></line><line x1="1225.0" y1="583" x2="1225.0" y2="599" class="dim"></line>
+      <text x="1130.0" y="617" class="o-lab" text-anchor="middle">b = 365 mm between the wheels</text>
+      <text x="1255.0" y="551" class="o-small">start</text>
+
+      <g transform="translate(1320 190)">
+        <rect x="0" y="0" width="232" height="128" rx="12" class="card"></rect>
+        <text x="18" y="30" class="o-k">TURNING LEFT</text>
+        <text x="18" y="58" class="o-b">The outer (right) wheel</text>
+        <text x="18" y="82" class="o-b">rolls farther than the</text>
+        <text x="18" y="106" class="o-b">inner (left) wheel.</text>
+      </g>
+
+      <g transform="translate(830 668)">
+        <rect x="0" y="0" width="722" height="112" rx="12" class="card-acc"></rect>
+        <text x="24" y="32" class="o-k">ANGLE TURNED</text>
+        <text x="24" y="78" class="o-big">θ = (sᵣ − sₗ) ÷ b</text>
+        <text x="24" y="102" class="o-small">example: right wheel 100 mm farther → 100 ÷ 365 = 0.27 rad ≈ <tspan class="o-acc">15.7°</tspan></text>
+        <text x="470" y="58" class="o-small">in radians; × 180/π for degrees.</text>
+        <text x="470" y="78" class="o-small">Spinning in place: sₗ = −sᵣ.</text>
+      </g>
+
+      <text x="48" y="840" class="o-foot">Counts come from the hub motors' own hall sensors, through 10 kΩ dividers (5 V → 3.3 V) into the ESP32. b is the effective spacing, calibrated on the floor.</text>
+    </svg>
