@@ -4,7 +4,9 @@ An offline home-security and assistant robot, built on salvaged hoverboard motor
 voice and hand-gesture commands, recognizes its owner, responds to intruders, and docks itself to recharge.
 
 **Full write-up, with the design, the math and everything that went wrong:** https://node0x00.github.io/qwen/  
-**Build video:** linked from the write-up.
+**Build video (16 min):** https://youtu.be/jL8Xb0To44A
+
+<p align="center"><a href="https://youtu.be/jL8Xb0To44A"><img src="https://img.youtube.com/vi/jL8Xb0To44A/maxresdefault.jpg" width="560" alt="Watch the Project Qwen build video on YouTube"></a></p>
 
 <p align="center"><img src="docs/hero-robot.jpg" alt="Qwen, a 3D-printed robot with a round camera head on a scissor lift, in front of its two docking AprilTags" width="420"></p>
 
